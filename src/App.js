@@ -9,18 +9,18 @@ export class App extends React.Component {
   constructor(props) {
   super(props);
     this.state = {
-      validate: false,
+      switcher: false,
     };
   }
 
   handleClick = () => {
-    this.setState({ validate: true })
+    this.setState({ switcher: true })
   }
 
   render() {
     return (
       <Fragment>
-        { this.state.validate ? <QuestionPage /> :
+        { this.state.switcher ? <QuestionPage /> :
           <div className="bg">
             <div className="wrap">
               <div className="img-left midle">
